@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association contre le réchauffement climatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="logoasso1.png" alt="logo">
+        <p class="name">BeAware</p>
+        </div>
+        <!-- menuburger -->
+        <div class="barre">
+            <nav class="navbar dark-mode" role="navigation">
+                <div class="navbar__logo">
+                    <div class="logo2">
+                        <img src="logoasso.png" alt="logo">
+                        <p class="name">BeAware</p>
+                    </div>
+                </div>    
+                <ul class="navbar__links">
+                <li class="navbar__link first"><a href="index.html">Accueil</a></li>
+                <li class="navbar__link third"><a href="page1.html">Nos combats</a></li>
+                <li class="navbar__link four"><a href="page2.html">Les bons gestes</a></li>
+                <li class="navbar__link fifth"><a href="Formulaire.html">Nous Contacter</a></li>
+                </ul>   
+                <button class="burger">
+                <span class="bar"></span>  
+                </button>   
+            </nav>
+        </div>
+
+        <script>
+            function toggleMenu () {  
+          const navbar = document.querySelector('.navbar');
+          const burger = document.querySelector('.burger');
+          
+          burger.addEventListener('click', (e) => {    
+            navbar.classList.toggle('show-nav');
+          });    
+          // bonus
+          const navbarLinks = document.querySelectorAll('.navbar a');
+          navbarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {    
+              navbar.classList.toggle('show-nav');
+            }); 
+          })
+           
+        }
+        toggleMenu();
+        </script>
+    </header>
+    <main>
+        <div class="button">
+            <p> <a href="page1.html" class="buton1">Notre combat</a></p>
+            <p> <a href="page2.html" class="buton2">Les bons gestes</a></p>
+            <p> <a href="Formulaire.html" class="buton3">Nous contacter</a></p>
+        </div>
+            <div class="container">
+                <div class="deforestation">
+                    <img src="imagecouvmobile.png" class="deforestation" alt="image déforestation">
+                </div>
+                <div class="souscontain">
+                    <h2>Le réchauchement climatique</h2>
+                    <div class="article">
+                        <p>BeAware est une association de lutte contre la pollution qui est la cause du réchauffement climatique.La pollution est un important contributeur au réchauffement climatique et est devenue une priorité mondiale urgente. Alors que les émissions de gaz à effet de serre, les déchets industriels et la déforestation continuent d'augmenter, la température moyenne de la planète augmente également. 
+                            La coopération internationale et les campagnes de sensibilisation du public favorisent un front uni contre la pollution, dans l'espoir de préserver l'avenir de notre planète et d'atténuer les impacts du réchauffement climatique sur l'environnement et l'humanité.
+                        </p>
+                        <img src="sickworld.png" alt="le monde est malade">
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="pied">
+            <div class="logo2">
+                <img src="logoasso.png" alt="logo">
+                <p class="name">BeAware</p>
+            </div>
+            <div class="reseausociaux">
+                <a href="#" ><img src="facebook-32.png" alt="facebook"></a>
+                <a href="#"><img src="twitter-22.png" alt="twitter"></a>
+                <a href="#"><img src="instagram-32.png" alt="instagram"></a> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

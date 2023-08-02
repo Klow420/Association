@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Nos combats</title>
+</head>
+<body>
+    <header>
+        <div class="barre">
+            <nav class="navbar dark-mode" role="navigation">
+                <div class="navbar__logo">
+                    <div class="logo2">
+                        <img src="logoasso.png" alt="logo">
+                        <p class="name">BeAware</p>
+                    </div>
+                </div>    
+                <ul class="navbar__links">
+                <li class="navbar__link first"><a href="index.html">Accueil</a></li>
+                <li class="navbar__link third"><a href="page1.html">Nos combats</a></li>
+                <li class="navbar__link four"><a href="page2.html">Les bons gestes</a></li>
+                <li class="navbar__link fifth"><a href="Formulaire.html">Nous Contacter</a></li>
+                </ul>   
+                <button class="burger">
+                <span class="bar"></span>  
+                </button>   
+            </nav>
+        </div>
+
+        <script>
+            function toggleMenu () {  
+          const navbar = document.querySelector('.navbar');
+          const burger = document.querySelector('.burger');
+          
+          burger.addEventListener('click', (e) => {    
+            navbar.classList.toggle('show-nav');
+          });    
+          // bonus
+          const navbarLinks = document.querySelectorAll('.navbar a');
+          navbarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {    
+              navbar.classList.toggle('show-nav');
+            }); 
+          })
+           
+        }
+        toggleMenu();
+        </script>
+    </header>
+    <main>
+        <h1>Nos Combat</h1>
+        <div class="cadre1">
+            <img src="images-4.jpeg" alt="polution" class="img1">
+            <img src="rechauffement-climatique-2.jpg" alt="réchauffement climatique" class="img2">
+        </div>
+        <p class="info">BeAware lutte pour que les usines et les entreprises qui polluent trop; prennent conscience que leurs actes ont des répercussions sur notre planète qui sont important. De plus la santé de notre planète est une affaire de tous, tout être humain, entreprise et usine ont une part de responsabilité. Personne est mieux protéger qu’une autre personne. En conséquence la population pour qui ils produisent leurs biens subissent des dérèglement climatiques.</p>
+        <h2>Exemples de conséquences de cette pollution</h2>
+        <div class="wrap">
+            <div class="box">
+              <div class="box-top">
+                <img class="box-image" src="rechauffement-climatique.jpg" alt="#">
+                <div class="title-flex">
+                  <h3 class="box-title">Réchauffement climatique</h3>
+                </div>
+                <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+              </div>
+              <a href="#" class="button">En savoir plus</a>
+            </div>
+            <div class="box">
+              <div class="box-top">
+                <img class="box-image" src="deforestation.jpg" alt="Déforestation">
+                <div class="title-flex">
+                  <h3 class="box-title">La déforestation de nos forêts</h3>
+                </div>
+                <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+              </div>
+              <a href="#" class="button">En savoir plus</a>
+            </div>
+            <div class="box">
+              <div class="box-top">
+                <img class="box-image" src="image.jpg" alt="Incendies">
+                <div class="title-flex">
+                  <h3 class="box-title">Départs d'incendies plus fréquents</h3>
+                </div>
+                <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+              </div>
+              <a href="#" class="button">En savoir plus</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="pied">
+          <div class="logo2">
+              <img src="logoasso.png" alt="logo">
+              <p class="name">BeAware</p>
+          </div>
+          <div class="reseausociaux">
+            <a href="#" ><img src="facebook-32.png" alt="facebook"></a>
+            <a href="#"><img src="twitter-22.png" alt="twitter"></a>
+            <a href="#"><img src="instagram-32.png" alt="instagram"></a> 
+          </div>
+      </div>
+  </footer>
+    
+</body>
+</html>

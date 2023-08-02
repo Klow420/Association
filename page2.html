@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Les bons gestes</title>
+</head>
+<body>
+    <header>
+        <div class="barre">
+            <nav class="navbar dark-mode" role="navigation">
+                <div class="navbar__logo">
+                    <div class="logo2">
+                        <img src="logoasso.png" alt="logo">
+                        <p class="name">BeAware</p>
+                    </div>
+                </div>    
+                <ul class="navbar__links">
+                <li class="navbar__link first"><a href="index.html">Accueil</a></li>
+                <li class="navbar__link third"><a href="page1.html">Nos combats</a></li>
+                <li class="navbar__link four"><a href="page2.html">Les bons gestes</a></li>
+                <li class="navbar__link fifth"><a href="Formulaire.html">Nous Contacter</a></li>
+                </ul>   
+                <button class="burger">
+                <span class="bar"></span>  
+                </button>   
+            </nav>
+        </div>
+
+        <script>
+            function toggleMenu () {  
+          const navbar = document.querySelector('.navbar');
+          const burger = document.querySelector('.burger');
+          
+          burger.addEventListener('click', (e) => {    
+            navbar.classList.toggle('show-nav');
+          });    
+          // bonus
+          const navbarLinks = document.querySelectorAll('.navbar a');
+          navbarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {    
+              navbar.classList.toggle('show-nav');
+            }); 
+          })
+           
+        }
+        toggleMenu();
+        </script>
+    </header>
+    <main>
+        <h1>Les bons gestes à avoir</h1>
+        <div class="cadre1">
+            <img src="takecareofearth.jpg" alt="protéger la Terre" class="img1">
+        </div>
+        <p class="info">Nous vous donnons quelques petits conseils pour que déjà à votre niveau vous puissiez agir comme la dit Armstrong “C'est un petit pas pour l’ homme, un grand pas pour l'humanité.”. Toute action qu’importe le niveau aura une impacte positif pour notre belle planète. Alors pourquoi ne pas essayer de la sauver ? </p>
+        <h2>Nos conseils</h2>
+        <div class="containcards">
+            <div class="card1">
+                <div class="card1-inner">
+                  <div class="card1-front">
+                    <p></p>
+                  </div>
+                  <div class="card1-back">
+                    <p>Dans un premier temps consommer plus varier vous permettra déjà à vous d’être en meilleur santé et de vivre votre meilleur vie.
+                        D’un autre côté cela permet d’éviter des surproductions d’aliments qui vont causer par l’utilisation de pesticides, de produits pour le bétail et la déjection de bétail est une cause majeur du réchauffement climatique.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card2-inner">
+                  <div class="card2-front">
+                    <p></p>
+                  </div>
+                  <div class="card2-back">
+                    <p>Changer sa façon de consommer l’eau. À l’heure actuelle nous consommons trop d’eau les nappes phréatiques se vident. Pour cela nous recommandons de voir sur internet pour trouver les outils de remplacements qui fera baisser votre consommation d’eau et aussi baisser votre facture d’eau en plus.</p>
+                  </div>
+                </div>
+            </div></div>
+            
+    </main>
+    <footer>
+      <div class="pied">
+          <div class="logo2">
+              <img src="logoasso.png" alt="logo">
+              <p class="name">BeAware</p>
+          </div>
+          <div class="reseausociaux">
+              <a href="#" ><img src="facebook-32.png" alt="facebook"></a>
+              <a href="#"><img src="twitter-22.png" alt="twitter"></a>
+              <a href="#"><img src="instagram-32.png" alt="instagram"></a> 
+          </div>
+      </div>
+  </footer>
+    
+</body>
+</html>
